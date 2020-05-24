@@ -1,0 +1,14 @@
+Overview
+Surprise is a Python scikit building and analyzing recommender systems that deal with explicit rating data.
+Surprise was designed with the following purposes in mind:
+- Give users perfect control over their experiments. To this end, a strong emphasis is laid on documentation, which we have tried to make as clear and precise as possible by pointing out every detail of the algorithms.
+- Alleviate the pain of Dataset handling. Users can use both built-in datasets (Movielens, Jester), and their own custom datasets.
+- Provide various ready-to-use prediction algorithms such as baseline algorithms, neighborhood methods, matrix factorization-based ( SVD, PMF, SVD++, NMF), and many others. Also, various similarity measures (cosine, MSD, pearson...) are built-in.
+- Make it easy to implement new algorithm ideas.
+- Provide tools to evaluate, analyse and compare the algorithms performance. Cross-validation procedures can be run very easily using powerful CV iterators (inspired by scikit-learn excellent tools), as well as exhaustive search over a set of parameters.
+- The name SurPRISE (roughly :) ) stands for Simple Python RecommendatIon System Engine.
+Please note that surprise does not support implicit ratings or content-based information.
+If have other quetions please check this website:https://gitee.com/pancasanova/Surprise/tree/master or sent your mistake email to here:2410520561@qq.com
+
+
+
