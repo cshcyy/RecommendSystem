@@ -18,3 +18,4 @@ surprise==0.1
 typed-ast==1.4.1
 wincertstore==0.2
 wrapt==1.11.2
+xlrd==1.2.0
