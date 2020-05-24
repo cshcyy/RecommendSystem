@@ -80,8 +80,7 @@ class Window(QMainWindow,Ui_MainWindow):
             self.display_process_label.append('成功读取数据量: '+str(totalnum)+'行.')
             if totalnum>self.max_totalnum:
                 self.display_process_label.append('读入的数据量过大,建议采用隔行读取!!!')
-        else:
-            self.display_process_label.append('没有导入任何数据文件!!!')
+
 
 
     '''下来选项改变触发算法选择
@@ -260,8 +259,9 @@ class Window(QMainWindow,Ui_MainWindow):
         if os.path.exists(self.result_path):
             save_path, file_type = QFileDialog.getSaveFileName(self,'请选择您要保存的路径',self.current_path,"Text Files (*.txt)")
             # self.display_process_label('保存路径:'+str(save_path))
-            shutil.move(self.result_path,save_path)
-            self.display_process_label.append('文件保存成功!')
+            if save_path :
+                shutil.move(self.result_path,save_path)
+                self.display_process_label.append('文件保存成功!')
         else:
             self.display_process_label.append('没有生成任何推荐文件!')
 
